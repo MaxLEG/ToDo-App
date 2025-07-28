@@ -34,6 +34,7 @@ const render = () => {
     const todoElement = createElement("div", todo);
     const removeBtn = createElement("button", "❌");
     removeBtn.addEventListener("click", () => removeTodo(index));
+    todoElement.classList.add("todo-item");
     todoElement.prepend(removeBtn);
     container.append(todoElement);
   });
